@@ -5,19 +5,21 @@ body {
     /* font-family: 'Crimson Text', serif; */
 }
 
-h1 {
-    display: inline;
+p {
+    display: inline-block;
+    width: 50%;
 }
 
 img {
-    display: inline;
+    float: right;
     max-width: 100%;
     height: auto;
-    opacity: 0.5;
+    transition: opacity 2s linear 0s;
+    opacity: 0.2;
 }
 
 img:hover {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     opacity: 1;
 }
