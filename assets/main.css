@@ -22,8 +22,10 @@ h1 {
 h2 {
 	float: right;
 	font-size: 14px;
-	font-weight: normal;
-	margin-right: 4px;
+    font-weight: normal;
+    text-decoration: underline;
+    padding-right: 14px;
+    border: 1px solid blue;
 }
 
 figure {
