@@ -57,6 +57,13 @@ p {
 	display: none;
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 12px;
+ }
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 48px;
@@ -90,6 +97,7 @@ p {
 	
 	.hokusai-s {
 		display: none;
+		width: 0px
 	}
 	
 	.hokusai-m {
@@ -100,7 +108,7 @@ p {
 		margin-bottom: 30px;
 	}
 	
-	.crop img {
+	.hokusai-l {
 		display: none;
 	}
 
@@ -142,7 +150,7 @@ p {
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	
 	.row {
 	}
 	
@@ -154,29 +162,29 @@ p {
 	p {
 		width: 90%;
 	}
-
+	
 	.col-right {
 		float: right;
 		width: 40%;
 	}
 	
 	.hokusai-m {
-		display: none;
-		/* height: 0px; */
+		/* display: none; */
+		height: 0px;
+	}	
+	
+	.hokusai-l {
+		display: inline-block !important;
 	}	
 	
 	.crop {
-		width: 500px;
-		height: 600px;
-		overflow: hidden;
-		border: 2px solid pink;
-	}
-	
-	.crop img {
-		border: 2px solid purple;
-		/* width: 500px;
-		height: auto;
-		margin: 0 0 0 -200px; */
+		width: 900px;
+		height: 900px;
+		background: #000 url('/assets/l.jpg') no-repeat center top;
+		/* background-size: contain;  */
+		background-position: -139px -200px;
+		/* overflow-x: hidden; */
+		/* clip: rect(5px 40px 40px 5px)  */
 	}
 }
 
